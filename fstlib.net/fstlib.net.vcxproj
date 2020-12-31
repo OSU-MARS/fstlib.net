@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{2CDC5198-68E4-4A34-B91F-C7F72D53D437}</ProjectGuid>
+    <Keyword>NetCoreCProj</Keyword>
+    <RootNamespace>Fst</RootNamespace>
+    <TargetFramework>net5.0</TargetFramework>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>NetCore</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>NetCore</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>NetCore</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>NetCore</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)C++\compression;$(SolutionDir)C++\interface;$(SolutionDir)C++\ext\zstd\common;$(IncludePath)</IncludePath>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)C++\compression;$(SolutionDir)C++\interface;$(SolutionDir)C++\ext\zstd\common;$(IncludePath)</IncludePath>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)ext\zstd\common;$(SolutionDir)fstlib;$(SolutionDir)fstlib.net</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <DisableSpecificWarnings>6993;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)ext\zstd\common;$(SolutionDir)fstlib;$(SolutionDir)fstlib.net</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <DisableSpecificWarnings>6993;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)ext\zstd\common;$(SolutionDir)fstlib;$(SolutionDir)fstlib.net</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <DisableSpecificWarnings>6993;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(SolutionDir)ext\zstd\common;$(SolutionDir)fstlib;$(SolutionDir)fstlib.net</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <DisableSpecificWarnings>6993;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\fstlib\fstlib.vcxproj">
+      <Project>{b7fa24ce-99b2-452b-be9e-070343f1a799}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fsttable\StringColumn.cpp" />
+    <ClCompile Include="managed-stub\FstCompressor.cpp" />
+    <ClCompile Include="managed-stub\FstHasher.cpp" />
+    <ClCompile Include="managed-stub\FstStore.cpp" />
+    <ClCompile Include="managed\FstColumn.cpp" />
+    <ClCompile Include="managed\FstTable.cpp" />
+    <ClCompile Include="managed\StringExtensions.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fsttable\Blob.h" />
+    <ClInclude Include="fsttable\BlobContainer.h" />
+    <ClInclude Include="fsttable\BlockWriter.h" />
+    <ClInclude Include="fsttable\ByteVector.h" />
+    <ClInclude Include="fsttable\ByteVectorAdapter.h" />
+    <ClInclude Include="fsttable\ColumnFactory.h" />
+    <ClInclude Include="fsttable\DestructableObject.h" />
+    <ClInclude Include="fsttable\DoubleVector.h" />
+    <ClInclude Include="fsttable\DoubleVectorAdapter.h" />
+    <ClInclude Include="fsttable\FactorVector.h" />
+    <ClInclude Include="fsttable\FactorVectorAdapter.h" />
+    <ClInclude Include="fsttable\FstTable.h" />
+    <ClInclude Include="fsttable\Int64VectorAdapter.h" />
+    <ClInclude Include="fsttable\IntegerMethods.h" />
+    <ClInclude Include="fsttable\IntVector.h" />
+    <ClInclude Include="fsttable\IntVectorAdapter.h" />
+    <ClInclude Include="fsttable\LogicalVectorAdapter.h" />
+    <ClInclude Include="fsttable\LongVector.h" />
+    <ClInclude Include="fsttable\StringArray.h" />
+    <ClInclude Include="fsttable\StringColumn.h" />
+    <ClInclude Include="fsttable\StringVector.h" />
+    <ClInclude Include="fsttable\TypeFactory.h" />
+    <ClInclude Include="managed-stub\FstCompressor.h" />
+    <ClInclude Include="managed-stub\FstHasher.h" />
+    <ClInclude Include="managed-stub\FstScale.h" />
+    <ClInclude Include="managed-stub\FstStore.h" />
+    <ClInclude Include="managed-stub\FstTimeScale.h" />
+    <ClInclude Include="managed-stub\IBlobContainer.h" />
+    <ClInclude Include="managed-stub\IByteColumn.h" />
+    <ClInclude Include="managed-stub\IColumnFactory.h" />
+    <ClInclude Include="managed-stub\IDoubleColumn.h" />
+    <ClInclude Include="managed-stub\IFactorColumn.h" />
+    <ClInclude Include="managed-stub\IFstTable.h" />
+    <ClInclude Include="managed-stub\IInt32Column.h" />
+    <ClInclude Include="managed-stub\IInt64Column.h" />
+    <ClInclude Include="managed-stub\ILogicalColumn.h" />
+    <ClInclude Include="managed-stub\IStringArray.h" />
+    <ClInclude Include="managed-stub\IStringColumn.h" />
+    <ClInclude Include="managed-stub\IStringWriter.h" />
+    <ClInclude Include="managed-stub\ITypeFactory.h" />
+    <ClInclude Include="managed-stub\StringEncoding.h" />
+    <ClInclude Include="managed\FstColumn.h" />
+    <ClInclude Include="managed\FstColumnType.h" />
+    <ClInclude Include="managed\FstTable.h" />
+    <ClInclude Include="managed\OpenMPHelper.h" />
+    <ClInclude Include="managed\StringExtensions.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

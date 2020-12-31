@@ -1,0 +1,13 @@
+# build results
+Debug/
+bin/
+obj/
+PerformanceResults/
+Release/
+x64/
+
+# nuget packages
+packages/
+
+# Visual Studio cache/options directory
+.vs/

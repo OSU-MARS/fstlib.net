@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="managed">
+      <UniqueIdentifier>{597c4b29-b92c-44bd-8efc-42b89da3e906}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fsttable">
+      <UniqueIdentifier>{a91b63dc-e395-45aa-ba18-fa1f87da21c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="managed-stub">
+      <UniqueIdentifier>{99a26b6a-ea2f-4b60-821d-d796737a2d10}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fsttable\StringColumn.cpp">
+      <Filter>fsttable</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="managed\FstColumn.cpp">
+      <Filter>managed</Filter>
+    </ClCompile>
+    <ClCompile Include="managed\StringExtensions.cpp">
+      <Filter>managed</Filter>
+    </ClCompile>
+    <ClCompile Include="managed\FstTable.cpp">
+      <Filter>managed</Filter>
+    </ClCompile>
+    <ClCompile Include="managed-stub\FstHasher.cpp">
+      <Filter>managed-stub</Filter>
+    </ClCompile>
+    <ClCompile Include="managed-stub\FstStore.cpp">
+      <Filter>managed-stub</Filter>
+    </ClCompile>
+    <ClCompile Include="managed-stub\FstCompressor.cpp">
+      <Filter>managed-stub</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fsttable\ColumnFactory.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\FstTable.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\IntegerMethods.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\TypeFactory.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\DestructableObject.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\StringVector.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\StringColumn.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\ByteVector.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\DoubleVector.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\FactorVector.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\IntVector.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\LongVector.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\BlockWriter.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\ByteVectorAdapter.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\DoubleVectorAdapter.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\FactorVectorAdapter.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\Int64VectorAdapter.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\IntVectorAdapter.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\LogicalVectorAdapter.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\StringArray.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\Blob.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="fsttable\BlobContainer.h">
+      <Filter>fsttable</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="managed\FstColumnType.h">
+      <Filter>managed</Filter>
+    </ClInclude>
+    <ClInclude Include="managed\OpenMPHelper.h">
+      <Filter>managed</Filter>
+    </ClInclude>
+    <ClInclude Include="managed\FstColumn.h">
+      <Filter>managed</Filter>
+    </ClInclude>
+    <ClInclude Include="managed\StringExtensions.h">
+      <Filter>managed</Filter>
+    </ClInclude>
+    <ClInclude Include="managed\FstTable.h">
+      <Filter>managed</Filter>
+    </ClInclude>
+    <ClInclude Include="managed-stub\IBlobContainer.h">
+      <Filter>managed-stub</Filter>
+    </ClInclude>
+    <ClInclude Include="managed-stub\IByteColumn.h">
+      <Filter>managed-stub</Filter>
+    </ClInclude>
+    <ClInclude Include="managed-stub\IColumnFactory.h">
+      <Filter>managed-stub</Filter>
+    </ClInclude>
+    <ClInclude Include="managed-stub\IDoubleColumn.h">
+      <Filter>managed-stub</Filter>
+    </ClInclude>
+    <ClInclude Include="managed-stub\IFactorColumn.h">
+      <Filter>managed-stub</Filter>
+    </ClInclude>
+    <ClInclude Include="managed-stub\IFstTable.h">
+      <Filter>managed-stub</Filter>
+    </ClInclude>
+    <ClInclude Include="managed-stub\IInt32Column.h">
+      <Filter>managed-stub</Filter>
+    </ClInclude>
+    <ClInclude Include="managed-stub\IInt64Column.h">
+      <Filter>managed-stub</Filter>
+    </ClInclude>
+    <ClInclude Include="managed-stub\ILogicalColumn.h">
+      <Filter>managed-stub</Filter>
+    </ClInclude>
+    <ClInclude Include="managed-stub\IStringArray.h">
+      <Filter>managed-stub</Filter>
+    </ClInclude>
+    <ClInclude Include="managed-stub\IStringColumn.h">
+      <Filter>managed-stub</Filter>
+    </ClInclude>
+    <ClInclude Include="managed-stub\IStringWriter.h">
+      <Filter>managed-stub</Filter>
+    </ClInclude>
+    <ClInclude Include="managed-stub\ITypeFactory.h">
+      <Filter>managed-stub</Filter>
+    </ClInclude>
+    <ClInclude Include="managed-stub\FstScale.h" />
+    <ClInclude Include="managed-stub\FstTimeScale.h" />
+    <ClInclude Include="managed-stub\StringEncoding.h" />
+    <ClInclude Include="managed-stub\FstHasher.h">
+      <Filter>managed-stub</Filter>
+    </ClInclude>
+    <ClInclude Include="managed-stub\FstStore.h">
+      <Filter>managed-stub</Filter>
+    </ClInclude>
+    <ClInclude Include="managed-stub\FstCompressor.h">
+      <Filter>managed-stub</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

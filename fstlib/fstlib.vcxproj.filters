@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="character\character_v6.cpp">
+      <Filter>character</Filter>
+    </ClCompile>
+    <ClCompile Include="byte\byte_v12.cpp">
+      <Filter>byte</Filter>
+    </ClCompile>
+    <ClCompile Include="blockstreamer\blockstreamer_v2.cpp">
+      <Filter>blockstreamer</Filter>
+    </ClCompile>
+    <ClCompile Include="compression\compression.cpp">
+      <Filter>compression</Filter>
+    </ClCompile>
+    <ClCompile Include="compression\compressor.cpp">
+      <Filter>compression</Filter>
+    </ClCompile>
+    <ClCompile Include="double\double_v9.cpp">
+      <Filter>double</Filter>
+    </ClCompile>
+    <ClCompile Include="factor\factor_v7.cpp">
+      <Filter>factor</Filter>
+    </ClCompile>
+    <ClCompile Include="integer\integer_v8.cpp">
+      <Filter>integer</Filter>
+    </ClCompile>
+    <ClCompile Include="integer64\integer64_v11.cpp">
+      <Filter>integer64</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\fststore.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\openmphelper.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="logical\logical_v10.cpp">
+      <Filter>logical</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\lz4\lz4.c">
+      <Filter>ext\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\lz4\xxhash.c">
+      <Filter>ext\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\common\debug.c">
+      <Filter>ext\zstd\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\common\entropy_common.c">
+      <Filter>ext\zstd\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\common\error_private.c">
+      <Filter>ext\zstd\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\common\fse_decompress.c">
+      <Filter>ext\zstd\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\common\pool.c">
+      <Filter>ext\zstd\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\common\threading.c">
+      <Filter>ext\zstd\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\common\zstd_common.c">
+      <Filter>ext\zstd\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\compress\fse_compress.c">
+      <Filter>ext\zstd\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\compress\hist.c">
+      <Filter>ext\zstd\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\compress\huf_compress.c">
+      <Filter>ext\zstd\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\compress\zstd_compress.c">
+      <Filter>ext\zstd\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\compress\zstd_double_fast.c">
+      <Filter>ext\zstd\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\compress\zstd_fast.c">
+      <Filter>ext\zstd\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\compress\zstd_lazy.c">
+      <Filter>ext\zstd\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\compress\zstd_ldm.c">
+      <Filter>ext\zstd\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\compress\zstd_opt.c">
+      <Filter>ext\zstd\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\compress\zstdmt_compress.c">
+      <Filter>ext\zstd\compress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\decompress\huf_decompress.c">
+      <Filter>ext\zstd\decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\decompress\zstd_decompress.c">
+      <Filter>ext\zstd\decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\dictBuilder\cover.c">
+      <Filter>ext\zstd\dictBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\dictBuilder\divsufsort.c">
+      <Filter>ext\zstd\dictBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\dictBuilder\fastcover.c">
+      <Filter>ext\zstd\dictBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\zstd\dictBuilder\zdict.c">
+      <Filter>ext\zstd\dictBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="character\character_v6.h">
+      <Filter>character</Filter>
+    </ClInclude>
+    <ClInclude Include="byte\byte_v12.h">
+      <Filter>byte</Filter>
+    </ClInclude>
+    <ClInclude Include="blockstreamer\blockstreamer_v2.h">
+      <Filter>blockstreamer</Filter>
+    </ClInclude>
+    <ClInclude Include="compression\compression.h">
+      <Filter>compression</Filter>
+    </ClInclude>
+    <ClInclude Include="compression\compressor.h">
+      <Filter>compression</Filter>
+    </ClInclude>
+    <ClInclude Include="double\double_v9.h">
+      <Filter>double</Filter>
+    </ClInclude>
+    <ClInclude Include="factor\factor_v7.h">
+      <Filter>factor</Filter>
+    </ClInclude>
+    <ClInclude Include="integer\integer_v8.h">
+      <Filter>integer</Filter>
+    </ClInclude>
+    <ClInclude Include="integer64\integer64_v11.h">
+      <Filter>integer64</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\fst_db.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\fstcompressor.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\fstdefines.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\fsthash.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\fststore.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\fststreamer.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\icolumnfactory.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\ifstcolumn.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\ifsttable.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\istringwriter.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\itypefactory.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\openmphelper.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="logical\logical_v10.h">
+      <Filter>logical</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\lz4\lz4.h">
+      <Filter>ext\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\lz4\xxhash.h">
+      <Filter>ext\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\zstd.h">
+      <Filter>ext\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\common\bitstream.h">
+      <Filter>ext\zstd\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\common\compiler.h">
+      <Filter>ext\zstd\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\common\cpu.h">
+      <Filter>ext\zstd\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\common\debug.h">
+      <Filter>ext\zstd\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\common\error_private.h">
+      <Filter>ext\zstd\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\common\fse.h">
+      <Filter>ext\zstd\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\common\huf.h">
+      <Filter>ext\zstd\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\common\mem.h">
+      <Filter>ext\zstd\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\common\pool.h">
+      <Filter>ext\zstd\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\common\threading.h">
+      <Filter>ext\zstd\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\common\xxhash.h">
+      <Filter>ext\zstd\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\common\zstd_errors.h">
+      <Filter>ext\zstd\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\common\zstd_internal.h">
+      <Filter>ext\zstd\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\compress\hist.h">
+      <Filter>ext\zstd\compress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\compress\zstd_compress_internal.h">
+      <Filter>ext\zstd\compress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\compress\zstd_double_fast.h">
+      <Filter>ext\zstd\compress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\compress\zstd_fast.h">
+      <Filter>ext\zstd\compress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\compress\zstd_lazy.h">
+      <Filter>ext\zstd\compress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\compress\zstd_ldm.h">
+      <Filter>ext\zstd\compress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\compress\zstd_opt.h">
+      <Filter>ext\zstd\compress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\compress\zstdmt_compress.h">
+      <Filter>ext\zstd\compress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\dictBuilder\cover.h">
+      <Filter>ext\zstd\dictBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\dictBuilder\divsufsort.h">
+      <Filter>ext\zstd\dictBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\zstd\dictBuilder\zdict.h">
+      <Filter>ext\zstd\dictBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="byte">
+      <UniqueIdentifier>{6bff85c6-56e9-47f5-acd4-90a3e848e834}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="character">
+      <UniqueIdentifier>{37f8c75e-37b7-40cf-ab27-f7db588ce0d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="blockstreamer">
+      <UniqueIdentifier>{038ef7f8-ae51-4e92-9e10-8a4f7d038fa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="compression">
+      <UniqueIdentifier>{bf42da32-1d53-4cf4-8ce3-a0e5100ae62e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="double">
+      <UniqueIdentifier>{56ac45db-2735-4e75-bfec-6074ea934c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="factor">
+      <UniqueIdentifier>{f4961882-e83c-4872-b4db-cd3005e199b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="integer">
+      <UniqueIdentifier>{af0f1d19-aaf8-4bd2-9008-2533c822e53f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="integer64">
+      <UniqueIdentifier>{b1b7546a-c110-4377-9cd2-0afa2a8731aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface">
+      <UniqueIdentifier>{1c318b53-01ad-4cb3-b473-31c5423198f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logical">
+      <UniqueIdentifier>{c10005c2-ee90-4cef-a8a9-7e1a3fd4e875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext">
+      <UniqueIdentifier>{aceebc24-bfbf-4570-9485-5bdd68332dae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\lz4">
+      <UniqueIdentifier>{d2e881d5-a1f5-49c4-b80d-adbaeb0838ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\zstd">
+      <UniqueIdentifier>{4147f63a-2633-40e0-a36b-29b3e021e02a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\zstd\common">
+      <UniqueIdentifier>{bd4e48b9-cf6e-474b-a0aa-d2105f05cc01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\zstd\compress">
+      <UniqueIdentifier>{c715086a-e6ad-478f-9949-a1284dbd7abb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\zstd\decompress">
+      <UniqueIdentifier>{5cba3037-d043-4cda-bd02-82378867d62c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\zstd\dictBuilder">
+      <UniqueIdentifier>{c51f6e74-b828-437a-be6b-4fdfaa5e29d2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
